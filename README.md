@@ -266,15 +266,29 @@ This project can support:
 
 # Repository Structure
 ```
-├── Classification.py
-├── effex_nn_weights_and_biases.pth
-├── effex_input_scaler.pkl
-├── effex_feature_cols.pkl
-├── effex_2023_suitability_classification_K1.csv
-├── effex_2023_suitability_summary_K1.csv
-├── daily_average_effex_2023_with_7day_rolling_average.jpeg
-├── monthly_average_effex_2023_nonzero_dni_hours_only.png
-└── README.md
+├── README.md
+├── LICENSE
+├── .gitignore
+│
+├── code/
+│   └── Classification.py
+│
+├── models/
+│   ├── effex_nn_weights_and_biases.pth
+│   ├── effex_input_scaler.pkl
+│   └── effex_feature_cols.pkl
+│
+├── data/
+│   ├── effex_2023_suitability_classification_K1.csv
+│   └── effex_2023_suitability_summary_K1.csv
+│
+├── figures/
+│   ├── daily_average_effex_2023_with_7day_rolling_average.jpeg
+│   └── monthly_average_effex_2023_nonzero_dni_hours_only.png
+│
+└── results/
+    ├── daily_average_effex_2023_nonzero_dni_hours_only.csv
+    └── monthly_average_effex_2023_nonzero_dni_hours_only.csv
 ```
 
 # Intended Use
