@@ -224,6 +224,17 @@ The daily and monthly time-series results show that the system generally maintai
 
 This indicates that low hourly suitability is largely influenced by solar availability rather than poor collector performance during active operation.
 
+<img width="7200" height="3600" alt="monthly_average_effex_2023_nonzero_dni_hours_only" src="https://github.com/user-attachments/assets/a51a2abd-a409-499d-8277-95a629a7c3fc" />
+<img width="8400" height="3600" alt="daily_average_effex_2023_with_7day_rolling_average" src="https://github.com/user-attachments/assets/3fa31620-7062-40fc-b85a-ee52b3a2f144" />
+
+The daily and monthly results show that the PTSC system maintains generally strong predicted EffEX performance across 2023 when only DNI > 0 hours are considered.
+
+The daily time-series plot shows short-term fluctuations caused by changes in solar conditions, but the 7-day rolling average remains mostly between 38% and 43%. This indicates that the system performs consistently above the 35% suitability threshold for most solar-active periods. A few sharp daily drops appear around March, August, and late October, likely linked to low-DNI or poor-weather days.
+
+The monthly plot gives a clearer overall trend. All months remain above the 35% threshold, meaning the system is suitable on a monthly-average basis throughout the year. February shows the highest average EffEX, while July is the lowest month, although it still remains above the suitability line.
+
+Overall, the results suggest that the system is not weak across 2023. Performance dips occur on specific days, but the broader trend remains stable and suitable during meaningful solar-operating hours.
+
 # Key Contribution
 
 This project demonstrates a complete machine learning workflow for solar thermal performance prediction:
