@@ -271,7 +271,8 @@ This project can support:
 ├── .gitignore
 │
 ├── code/
-│   └── Classification.py
+│   ├── Classification.py
+│   └── Time series Graph.py
 │
 ├── models/
 │   ├── effex_nn_weights_and_biases.pth
