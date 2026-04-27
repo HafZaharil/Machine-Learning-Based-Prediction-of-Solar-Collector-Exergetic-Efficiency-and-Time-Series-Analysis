@@ -59,7 +59,7 @@ The prediction pipeline uses pre-trained neural network components:
 effex_nn_weights_and_biases.pth
 effex_input_scaler.pkl
 effex_feature_cols.pkl
-
+```
 ### Description
 
 * effex_nn_weights_and_biases.pth — saved neural network weights and biases
