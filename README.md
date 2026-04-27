@@ -1,7 +1,7 @@
 # Machine-Learning-Based-Prediction-of-Solar-Collector-Exergetic-Efficiency-and-Time-Series-Analysis
 Machine learning-based prediction of solar thermal system performance using operational inputs. This project develops a neural network model to estimate exergetic efficiency (EffEX) of a parabolic trough solar collector under varying operating and environmental conditions. Using cleaned 2023 meteorological data from PVGIS (Abu Dhabi), the model performs hourly optimisation to identify maximum achievable efficiency, followed by daily and monthly time-series analysis. Operating conditions are classified as suitable or not suitable based on a defined efficiency threshold of 35%, enabling full-year performance assessment without repeated thermodynamic simulations.
 
-# Solar Thermal Performance Prediction and Time-Series Analysis (2023)
+# Solar Thermal Performance Prediction and Time-Series Analysis
 
 A machine learning-based project for predicting and analysing Parabolic Trough Solar Collector (PTSC) performance using a trained neural network and full-year 2023 meteorological data.
 
