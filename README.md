@@ -180,4 +180,103 @@ Daily average EffEX =
 sum of EffEX during DNI > 0 hours
 /
 number of DNI > 0 hours
+```
 This produces a clearer time-series trend because only solar-active hours are included in the daily calculation.
+
+### Daily EffEX Time-Series Plot
+
+Plot Description
+
+This figure shows the daily average predicted EffEX across 2023.
+
+The plot includes:
+
+* Daily average EffEX
+* 7-day rolling average
+* 35% suitability threshold
+
+The 7-day rolling average smooths short-term fluctuations and makes the annual trend easier to interpret.
+
+### Monthly EffEX Time-Series Plot
+
+Plot Description
+
+This figure shows the monthly average predicted EffEX for 2023.
+
+Monthly values are calculated from daily average EffEX values based on DNI > 0 hours only.
+
+The plot provides a clearer view of longer-term performance variation across the year.
+
+
+# Results and Discussion
+The full-year hourly classification produced:
+
+```
+Suitable hours = 3368
+Not suitable hours = 5392
+```
+
+The not suitable hours include low-irradiance and night-time conditions.
+
+When the analysis focuses on DNI > 0 hours, the system performance becomes more representative of active solar operation.
+
+The daily and monthly time-series results show that the system generally maintains EffEX values close to or above the suitability threshold during meaningful solar availability periods.
+
+This indicates that low hourly suitability is largely influenced by solar availability rather than poor collector performance during active operation.
+
+# Key Contribution
+
+This project demonstrates a complete machine learning workflow for solar thermal performance prediction:
+
+```
+Cleaned PVGIS data
+        ↓
+Trained EffEX neural network
+        ↓
+Hourly operating-point search
+        ↓
+Maximum EffEX prediction
+        ↓
+Suitability classification
+        ↓
+Daily and monthly time-series analysis
+```
+
+# Applications
+
+This project can support:
+
+* Solar thermal performance prediction
+* Full-year operating-condition analysis
+* Suitability classification
+* Time-series performance assessment
+* ML-assisted thermodynamic system evaluation
+* Rapid screening of solar collector operating conditions
+
+# Repository Structure
+```
+├── Classification.py
+├── effex_nn_weights_and_biases.pth
+├── effex_input_scaler.pkl
+├── effex_feature_cols.pkl
+├── effex_2023_suitability_classification_K1.csv
+├── effex_2023_suitability_summary_K1.csv
+├── daily_average_effex_2023_with_7day_rolling_average.jpeg
+├── monthly_average_effex_2023_nonzero_dni_hours_only.png
+└── README.md
+```
+
+# Intended Use
+
+This project is intended as a machine learning-based performance prediction and time-series analysis workflow for PTSC systems.
+
+It is designed for:
+
+* Fast annual analysis
+* Operational screening
+* Data-driven performance evaluation
+* Research demonstration
+* GitHub portfolio presentation
+
+  
+
