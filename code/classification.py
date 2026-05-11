@@ -58,7 +58,7 @@ print(feature_cols)
 # Neural network structure
 # ============================================================
 # This must match the network used during training.
-# No training is done here; the saved weights are loaded below.
+# No training is done here. The saved weights are loaded below.
 
 class ThermalNN(nn.Module):
     def __init__(self, input_dim):
